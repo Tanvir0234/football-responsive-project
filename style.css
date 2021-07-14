@@ -1,3 +1,6 @@
+ 
+
+
 /* header section */
 
 header{
@@ -84,6 +87,55 @@ border-radius: 5px;
     
 }
 
+.stedium-details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:30px;
+    grid-row-gap:27px;
+}
+
+.stediums{
+    border: 2px solid rgba(0, 0, 0, 0.034);
+    padding: 5%;
+    border-radius: 5px;
+    height: 474px;
+    transition: 0.4s;
+}
+.stediums:hover{
+    transform: scale(1.2);
+}
+.stedium-1 img{
+    width: 100%;
+    height: 256px;
+}
+.stedium-info .stedium-name{
+    font-size: 20px;
+    color: #1e1e1e;
+    font-weight: 500;
+}
+.blogger-image{
+padding-right: 10px;
+display: flex;
+padding-right: 10px;
+}
+.blogger-name{
+    padding-left: 10px;
+}
+.post-view{
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+}
+.blogger-icon{
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+    justify-content: space-between;
+}
+.blogger-icon span{
+    padding-right: 10px;
+}
+
 /*-------Main section end-----*/
 
 /*-------footer start-------*/
@@ -116,5 +168,104 @@ footer{
     text-align: center;
 
 }
+.blogger-image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.blog-icon{
+    font-size: 12px;
+    
+}
 
 /*-------footer end-------*/
+
+
+/*-----Media Query start-------*/
+
+@media only screen and (max-width:760px) and (min-width:360px) {
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .header-banner{
+        width:100%;
+    }
+    .header-banner img{
+        width: 100%;
+    }
+  
+    .container{
+        width: 100%;
+
+    }
+    .player-list{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    
+        grid-row-gap:27px;
+    }
+    .stedium-details{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap:30px;
+        grid-row-gap:27px;
+    }
+    .stedium-1 img{
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width:1024px) and (min-width:761px) {
+
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       
+
+    }
+    .header-title{
+        width:75%;
+    }
+    .header-banner{
+        width:75%;
+    }
+    .header-banner img{
+        width: 100%;
+        
+    }
+  
+    .container{
+        width: 100%;
+
+    }
+    .player-list{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    
+        grid-row-gap:27px;
+    }
+    .stedium-details{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap:30px;
+        grid-row-gap:27px;
+    }
+    .stedium-1 img{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        text-align: center;
+    }
+    
+}
