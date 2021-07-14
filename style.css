@@ -5,8 +5,8 @@ display: flex;
 background-color: rgba(50, 50, 248, 0.952);
 }
 .header-title{
-    Width :485px;
-     Height: 230px;
+    Width :100%;
+    
     padding: 207px 51px 240px 156px;
 }
 .header-title h1{
@@ -33,3 +33,48 @@ background-color: rgba(50, 50, 248, 0.952);
 
 /*   header section end */
 
+/* Main Section Start*/
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+background-color: #ffffff;
+width: 1050px;
+padding-top:30px;
+margin-top: 21px;
+border-radius: 5px;
+
+}
+.player-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:30px;
+    grid-row-gap:27px;
+    
+    
+  
+}
+
+
+
+.players{
+    
+    
+    border: 2px solid rgba(0, 0, 0, 0.034);
+    padding: 5%;
+    border-radius: 5px;
+}
+ .player-image img{
+    width: 300px;
+    height: 256px;
+
+}
+.player-details .player-name{
+    font-size: 20px;
+    color: #1e1e1e;
+    font-weight: 500;
+    
+}
