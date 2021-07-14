@@ -1,0 +1,35 @@
+/* header section */
+
+header{
+display: flex;
+background-color: rgba(50, 50, 248, 0.952);
+}
+.header-title{
+    Width :485px;
+     Height: 230px;
+    padding: 207px 51px 240px 156px;
+}
+.header-title h1{
+    
+    font-size: 64px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.header-title button{
+    background-color: #E02C6D;
+    color: #ffffff;
+    height: 44px;
+    width: 168px;
+}
+.header-banner {
+    padding: 153px 140.99px 86px 51px;
+}
+
+.header-banner img{
+   width: 556.01px;
+   height: 438px;
+
+}
+
+/*   header section end */
+
